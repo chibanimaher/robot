@@ -1,0 +1,28 @@
+*** Settings ***
+Library           Selenium2Library
+
+*** Test Cases ***
+test
+    [Tags]    for
+    Open Browser    https://www.amazon.fr/    gc
+    Set Browser Implicit Wait     2s
+    Maximize Browser Window
+    Input Text    xpath=//*[@id="twotabsearchtextbox"]    ecouteurs samsung akg
+    Press Key    id=twotabsearchtextbox    \\13
+    Sleep    1s
+    Click Image    css=#result_0 > div > div > div > div.a-fixed-left-grid-col.a-col-left > div > div > a > img
+    Sleep    2s
+    Close Browser
+
+yass
+    [Tags]    fly
+    Open Browser    https://www.clubmed.fr/?_ab2=b&    gc
+    Maximize Browser Window
+    Sleep    1s
+    Close Browser
+
+*** Keywords ***
+loginFac
+    Input Text    id=email    maher@gmail.com
+    Input Password    id=pass    maherzarzis
+    Sleep    1s

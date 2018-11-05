@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20181031 16:49:21.250" generator="Robot 3.0.4 (Python 2.7.15 on win32)">
+<suite source="C:\Users\mchibani\Desktop\proROB\robot\project1\project1\testSuite.txt" id="s1" name="testSuite">
+<test id="s1-t1" name="test">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://fr-fr.facebook.com/</arg>
+<arg>gc</arg>
+</arguments>
+<msg timestamp="20181031 16:49:21.624" level="INFO">Opening browser 'gc' to base url 'https://fr-fr.facebook.com/'.</msg>
+<status status="PASS" endtime="20181031 16:49:27.156" starttime="20181031 16:49:21.624"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20181031 16:49:28.301" starttime="20181031 16:49:27.156"></status>
+</kw>
+<kw name="loginFac">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=email</arg>
+<arg>maher@gmail.com</arg>
+</arguments>
+<msg timestamp="20181031 16:49:28.305" level="INFO">Typing text 'maher@gmail.com' into text field 'id=email'.</msg>
+<status status="PASS" endtime="20181031 16:49:28.833" starttime="20181031 16:49:28.305"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=pass</arg>
+<arg>maherzarzis</arg>
+</arguments>
+<msg timestamp="20181031 16:49:28.833" level="INFO">Typing password into text field 'id=pass'.</msg>
+<status status="PASS" endtime="20181031 16:49:28.976" starttime="20181031 16:49:28.833"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20181031 16:49:29.977" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20181031 16:49:29.977" starttime="20181031 16:49:28.976"></status>
+</kw>
+<status status="PASS" endtime="20181031 16:49:29.977" starttime="20181031 16:49:28.305"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20181031 16:49:32.118" starttime="20181031 16:49:29.977"></status>
+</kw>
+<status status="PASS" endtime="20181031 16:49:32.118" critical="yes" starttime="20181031 16:49:21.624"></status>
+</test>
+<test id="s1-t2" name="yass">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://www.clubmed.fr/?_ab2=b&amp;</arg>
+<arg>gc</arg>
+</arguments>
+<msg timestamp="20181031 16:49:32.118" level="INFO">Opening browser 'gc' to base url 'https://www.clubmed.fr/?_ab2=b&amp;'.</msg>
+<status status="PASS" endtime="20181031 16:49:39.968" starttime="20181031 16:49:32.118"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20181031 16:49:41.092" starttime="20181031 16:49:39.968"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20181031 16:49:42.092" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20181031 16:49:42.092" starttime="20181031 16:49:41.092"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20181031 16:49:44.338" starttime="20181031 16:49:42.092"></status>
+</kw>
+<tags>
+<tag>fly</tag>
+</tags>
+<status status="PASS" endtime="20181031 16:49:44.338" critical="yes" starttime="20181031 16:49:32.118"></status>
+</test>
+<status status="PASS" endtime="20181031 16:49:44.338" starttime="20181031 16:49:21.250"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">fly</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="testSuite" pass="2">testSuite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
